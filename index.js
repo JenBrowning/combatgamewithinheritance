@@ -9,8 +9,8 @@ function Human(options) {
 }
 function Person(options) {
     Human.call(this, options);
-    Person.prototype = Object.create(Human.prototype);
 }
+Person.prototype = Object.create(Human.prototype);
 
 Person.prototype.fight = function (enemy) {
     console.log("Oh those are fighting words")
